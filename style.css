@@ -1,0 +1,99 @@
+
+
+
+  body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh; 
+    background-color: rgb(172, 239, 239);
+    font-size: .85cm;
+}
+
+.container, #resumePage {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+button {
+    padding: 1cm 1.8cm; 
+    margin-top: 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(99, 99, 199);
+    cursor: pointer;
+    font-size: 1cm;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.7em; /* Add units here */
+    font-weight: bold;
+    color: rgb(148, 72, 72);
+    font-size: .75cm;    
+}
+
+textarea {
+    height: 1500px;
+    border-radius: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5cm;
+    border: 4px solid rgb(117, 183, 218);
+    box-sizing: border-box; /* Add semicolon here */
+}
+
+.hidden {
+    display: none;
+}
+
+#resumeGenerate img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover; 
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+}
+
+#resumeGenerate h1 {
+    text-align: center;
+    color: rgb(77, 129, 232);
+}
+
+#resumeGenerate h2 {
+    text-align: center;
+    color: rgb(157, 175, 211);
+    text-align: left;
+}
+
+/* Corrected 'Montserrat' font-family section */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* Corrected weight */
+    font-style: normal;
+}
+
+
+
+ 
+
+
+
+
+

@@ -1,0 +1,86 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>DYNAMIC RESUME BUILDER</h2>
+        <form id="resumeform">
+            <fieldset>
+                <legend>User Name</legend>
+                <input type="text" id="username" placeholder="username"><br><br>
+                <legend>Personal Information</legend>
+                <label for="photo">Upload photo</label>
+                <input type="file" id="photo" name="photo" required><br><br>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Education</label>
+                <input type="text" id="education" name="education" required><br><br>
+                <label for="institution">Institution</label>
+                <input type="text" id="institution" name="institution" required><br><br>
+                <label for="year">Year Completed</label>
+                <input type="number" id="year" name="year_completed" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="experience">Work Experience</label>
+                <input type="text" id="experience" name="experience" required><br><br>
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" required><br><br>
+                <label for="years">Years</label>
+                <input type="text" id="years" name="years" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skill1">Skill1</label>
+                <input type="text" id="skill1" name="skill1" required><br><br>
+                <label for="skill2">Skill2</label>
+                <input type="text" id="skill2" name="skill2" required><br><br>
+                <label for="skill3">Skill3</label>
+                <input type="text" id="skill3" name="skill3" required><br><br>
+            </fieldset>
+            <button type="submit">Generate Form</button>
+        </form>
+    </div>
+    <div id="resumeGenerate" class="resume-generate hidden">
+        <div id="resumeContent" class="resume-content">
+            <img id="resumePhoto" class="resume-photo" src="" alt="Photo">
+            <h1 id="resumeName"></h1>
+            <p id="resumeEmail"></p>
+            <p id="resumePhone"></p>
+            <h2>EDUCATION</h2>
+            <p id="resumeEducation"></p> 
+            <h2>WORK EXPERIENCE</h2>
+            <p id="resumeExperience"></p> 
+            <h2>SKILLS</h2>
+            <p id="resumeSkill1"></p>
+            <p id="resumeSkill2"></p>
+            <p id="resumeSkill3"></p>
+        </div>
+        <div class="justify-center">
+            <button id="editButton">Edit</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/html2pdf.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
+
